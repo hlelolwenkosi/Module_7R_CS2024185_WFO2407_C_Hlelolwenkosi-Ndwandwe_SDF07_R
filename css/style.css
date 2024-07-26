@@ -4,6 +4,8 @@
     box-sizing: border-box;
 }
 
+/* Custom Properties, update these for your own design */
+
 :root {
     --ff-primary: 'Source Sans Pro', sans-serif;
     --ff-secondary: 'Source Code Pro', monospace;
@@ -13,17 +15,16 @@
     
     --clr-light: #fff;
     --clr-dark: #303030;
-    --clr-accent: #85e016;
+    --clr-accent: #16e0bd;
     
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
+    
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
-    0.125em 0.125em 0.25em rgba(0,0,0,.15);
-
+          0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
-
 
 @media (min-width: 800px) {
     :root {
@@ -31,16 +32,16 @@
         --fs-h2: 3.75rem;
         --fs-h3: 1.5rem;
         --fs-body: 1.125rem;
-
-        
     }
 }
 
 /* General styles */
 
-html {
+/* endable this to add smooth scrolling */
+/* html {
     scroll-behavior: smooth;
-}
+} */
+
 
 body {
     background: var(--clr-light);
@@ -48,7 +49,7 @@ body {
     margin: 0;
     font-family: var(--ff-primary);
     font-size: var(--fs-body);
-    line-height: 1;
+    line-height: 1.6;
 }
 
 section {
@@ -66,7 +67,6 @@ strong { font-weight: var(--fw-bold) }
     outline: 3px solid var(--clr-accent);
     outline-offset: 3px;
 }
-
 
 /* Buttons */
 
@@ -88,20 +88,19 @@ strong { font-weight: var(--fw-bold) }
     transform: scale(1.1);
 }
 
-
-
 /* Typography */
 
 h1,
 h2,
 h3 {
-    line-height: 1.1;
+    line-height: 1;
     margin: 0;
 }
 
 h1 { font-size: var(--fs-h1) }
 h2 { font-size: var(--fs-h2) }
 h3 { font-size: var(--fs-h3) }
+
 
 .section__title {
     margin-bottom: .25em;
@@ -133,8 +132,9 @@ h3 { font-size: var(--fs-h3) }
     font-weight: var(--fw-bold);
     margin-bottom: 2em;
 }
- 
+
 /* header */
+
 header {
     display: flex;
     justify-content: space-between;
@@ -213,6 +213,10 @@ header {
 }
 
 
+
+
+
+
 .hamburger {
     display: block;
     position: relative;
@@ -239,7 +243,6 @@ header {
 
 .hamburger::before { top: 6px; }
 .hamburger::after { bottom: 6px; }
-
 
 
 /*  Intro section  */
@@ -286,11 +289,13 @@ header {
     }
 }
 
+
+
 /*  My services section  */
 
 .my-services {
     background-color: var(--clr-dark);
-    background-image: url(..images/service.jpg);
+    background-image: url(../img/services-bg.jpg);
     background-size: cover;
     /* background-blend-mode: multiply; */
     color: var(--clr-light);
@@ -334,6 +339,7 @@ header {
     }
 }
 
+
 .about-me {
     max-width: 1000px;
     margin: 0 auto;
@@ -341,6 +347,8 @@ header {
 
 .about-me__img {
     box-shadow: var(--bs);
+    
+    
 }
 
 @media (min-width: 600px) {
@@ -372,6 +380,8 @@ header {
         grid-area: img;
         position: relative;
         z-index: 2;
+        
+        
     }
 }
 
@@ -470,25 +480,3 @@ header {
     margin-left: auto;
     margin-right: auto;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
