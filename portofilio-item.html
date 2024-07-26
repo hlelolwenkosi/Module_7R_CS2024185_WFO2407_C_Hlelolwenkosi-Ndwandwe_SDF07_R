@@ -4,23 +4,31 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>DevJane Portfolio Website</title>
+        
+        <!-- Normalize CSS for consistent styling across browsers -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        
+        <!-- Font Awesome for icons -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
         
-        <!-- Update these with your own fonts -->
+        <!-- Google Fonts for custom typography -->
         <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
         
+        <!-- Link to your custom stylesheet -->
         <link rel="stylesheet" href="css/style.css">
-
     </head>
     <body>
+        <!-- Header section with logo and navigation toggle -->
         <header>
             <div class="logo">
-                <img src="img/devjane.png" alt="">
+                <!-- Logo image -->
+                <img src="images/web-dev-hlelo-high-resolution-logo-black.png" alt="Logo">
             </div>
+            <!-- Navigation toggle button for mobile view -->
             <button class="nav-toggle" aria-label="toggle navigation">
                 <span class="hamburger"></span>
             </button>
+            <!-- Navigation menu -->
             <nav class="nav">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="index.html" class="nav__link">Home</a></li>
@@ -31,53 +39,47 @@
             </nav>
         </header>
         
-
+        <!-- Introductory section -->
         <section class="intro">
             <h1 class="section__title section__title--intro">
-                The title <strong>of my project</strong>
+                <strong>Cat's instagram</strong>
             </h1>
             <p class="section__subtitle section__subtitle--intro">A short subtitle</p>
-            <img src="img/portfolio-01.jpg" alt="" class="intro__img">
+            <!-- Introductory image -->
+            <img src="images/pexels-jorge-jesus-137537-614117.jpg" alt="Introductory Image" class="intro__img">
         </section>
         
-        <div class="portfolio-item-individual">
-            <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
-            <img src="img/portfolio-details.jpg" alt="">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe et amet tenetur! Fugit sequi optio corrupti fugiat ducimus consequatur incidunt?</p>
-            <p>Voluptatibus, soluta blanditiis! Incidunt ea unde itaque illo molestiae eligendi sint culpa nobis voluptas sapiente voluptate, magnam ipsum eius earum?</p>
+        <!-- Portfolio item details -->
+        <div class="portfolio-item-individual ">
+            <p>The project creates a profile page similar to an Instagram profile, featuring a header with user information and a main section with a gallery of posts. Each post includes images or videos, along with likes and comments, creating a visually engaging layout for pet-related content. </p>
+            <!-- Image related to the portfolio item -->
+            <a href="https://github.com/hlelolwenkosi/Module_6R_CS2024185_WFO2407_Group-c_Hlelolwenkosi-Ndwandwe_SDF06_R" class="portfolio__item"> 
+                <img src="images/cat's instagram.png" alt="Portfolio Details">
+            </a>
         </div>
         
-        
-        <!-- Footer -->
+        <!-- Footer section -->
         <footer class="footer">
-            <!-- replace with your own email address -->
-            <a href="mailto:hello@jane.dev" class="footer__link">hello@jane.dev</a>
+            <!-- Contact email link -->
+            <a href="mailto:1071hf@gmail.com class="footer__link">1071hf@gmail.com</a>
+            <!-- Social media links -->
             <ul class="social-list">
                 <li class="social-list__item">
-                    <a class="social-list__link" href="https://codepen.io">
-                        <i class="fab fa-codepen"></i>
-                    </a>
+                    <a class="social-list__link" href="https://codepen.io/Hlelo-Ndwandwe" aria-label="CodePen"><i class="fab fa-codepen"></i></a>
                 </li>
                 <li class="social-list__item">
-                    <a class="social-list__link" href="http://dribbble.com">
-                        <i class="fab fa-dribbble"></i>
-                    </a>
+                    <a class="social-list__link" href="https://dribbble.com/Hlelo1" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
                 </li>
                 <li class="social-list__item">
-                    <a class="social-list__link" href="https://twitter.com">
-                        <i class="fab fa-twitter"></i>
-                    </a>
+                    <a class="social-list__link" href="https://x.com/Hlelo0918437657" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                 </li>
                 <li class="social-list__item">
-                    <a class="social-list__link" href="https://github.com">
-                        <i class="fab fa-github"></i>
-                    </a>
+                    <a class="social-list__link" href="https://github.com/hlelolwenkosi" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 </li>
             </ul>
         </footer>
         
-        
+        <!-- Link to your custom JavaScript file -->
         <script src="js/index.js"></script>
-        
     </body>
 </html>
