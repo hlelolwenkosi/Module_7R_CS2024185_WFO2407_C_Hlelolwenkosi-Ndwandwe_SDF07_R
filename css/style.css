@@ -1,33 +1,37 @@
 *,
 *::before,
 *::after {
-    box-sizing: border-box;
+    box-sizing: border-box; /* Ensures padding and border are included in the element's total width and height */
 }
 
-/* Custom Properties, update these for your own design */
-
 :root {
+    /* Font Families */
     --ff-primary: 'Source Sans Pro', sans-serif;
     --ff-secondary: 'Source Code Pro', monospace;
     
+    /* Font Weights */
     --fw-reg: 300;
     --fw-bold: 900;
     
-    --clr-light: #fff;
+    /* Colors */
+    --clr-light: #ffffff;
     --clr-dark: #303030;
-    --clr-accent: #16e0bd;
+    --clr-accent: #16e074;
     
+    /* Font Sizes */
     --fs-h1: 3rem;
     --fs-h2: 2.25rem;
     --fs-h3: 1.25rem;
     --fs-body: 1rem;
     
+    /* Box Shadow */
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.25),
           0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 
 @media (min-width: 800px) {
     :root {
+        /* Responsive Font Sizes */
         --fs-h1: 4.5rem;
         --fs-h2: 3.75rem;
         --fs-h3: 1.5rem;
@@ -37,34 +41,28 @@
 
 /* General styles */
 
-/* endable this to add smooth scrolling */
-/* html {
-    scroll-behavior: smooth;
-} */
-
-
 body {
-    background: var(--clr-light);
-    color: var(--clr-dark);
+    background: var(--clr-light); /* Background color */
+    color: var(--clr-dark); /* Text color */
     margin: 0;
-    font-family: var(--ff-primary);
-    font-size: var(--fs-body);
-    line-height: 1.6;
+    font-family: var(--ff-primary); /* Font family for the body */
+    font-size: var(--fs-body); /* Font size for the body */
+    line-height: 1.6; /* Line height for readability */
 }
 
 section {
-    padding: 5em 2em;
+    padding: 5em 2em; /* Padding for sections */
 }
 
 img {
-    display: block;
-    max-width: 100%;
+    display: block; /* Remove inline space below images */
+    max-width: 100%; /* Ensure images are responsive */
 }
 
-strong { font-weight: var(--fw-bold) }
+strong { font-weight: var(--fw-bold); } /* Bold text */
 
 :focus {
-    outline: 3px solid var(--clr-accent);
+    outline: 3px solid var(--clr-accent); /* Outline for focus state */
     outline-offset: 3px;
 }
 
@@ -72,20 +70,20 @@ strong { font-weight: var(--fw-bold) }
 
 .btn {
     display: inline-block;
-    padding: .5em 2.5em;
-    background: var(--clr-accent);
-    color: var(--clr-dark);
+    padding: .5em 2.5em; /* Button padding */
+    background: var(--clr-accent); /* Button background color */
+    color: var(--clr-dark); /* Button text color */
     text-decoration: none;
-    cursor: pointer;
-    font-size: .8rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: var(--fw-bold);
-    transition: transform 200ms ease-in-out;
+    cursor: pointer; /* Pointer cursor for button */
+    font-size: .8rem; /* Button font size */
+    text-transform: uppercase; /* Uppercase text */
+    letter-spacing: 2px; /* Letter spacing */
+    font-weight: var(--fw-bold); /* Bold font weight */
+    transition: transform 200ms ease-in-out; /* Smooth scaling effect */
 }
 
 .btn:hover {
-    transform: scale(1.1);
+    transform: scale(1.1); /* Scale up button on hover */
 }
 
 /* Typography */
@@ -93,70 +91,69 @@ strong { font-weight: var(--fw-bold) }
 h1,
 h2,
 h3 {
-    line-height: 1;
-    margin: 0;
+    line-height: 1; /* Remove extra space below headings */
+    margin: 0; /* Remove default margins */
 }
 
-h1 { font-size: var(--fs-h1) }
-h2 { font-size: var(--fs-h2) }
-h3 { font-size: var(--fs-h3) }
-
+h1 { font-size: var(--fs-h1); } /* Heading 1 font size */
+h2 { font-size: var(--fs-h2); } /* Heading 2 font size */
+h3 { font-size: var(--fs-h3); } /* Heading 3 font size */
 
 .section__title {
-    margin-bottom: .25em;
+    margin-bottom: .25em; /* Margin below section titles */
 }
 
 .section__title--intro {
-    font-weight: var(--fw-reg);
+    font-weight: var(--fw-reg); /* Regular font weight for intro titles */
 }
 
 .section__title--intro strong {
-    display: block;
+    display: block; /* Display strong text as block element */
 }
 
 .section__subtitle {
     margin: 0;
-    font-size: var(--fs-h3);
+    font-size: var(--fs-h3); /* Font size for section subtitles */
 }
 
 .section__subtitle--intro,
 .section__subtitle--about {
-    background: var(--clr-accent);
-    padding: .25em 1em;
-    font-family: var(--ff-secondary);
-    margin-bottom: 1em;
+    background: var(--clr-accent); /* Background color for section subtitles */
+    padding: .25em 1em; /* Padding around subtitles */
+    font-family: var(--ff-secondary); /* Secondary font family for subtitles */
+    margin-bottom: 1em; /* Margin below subtitles */
 }
 
 .section__subtitle--work {
-    color: var(--clr-accent);
-    font-weight: var(--fw-bold);
-    margin-bottom: 2em;
+    color: var(--clr-accent); /* Text color for work subtitles */
+    font-weight: var(--fw-bold); /* Bold font weight for work subtitles */
+    margin-bottom: 2em; /* Margin below work subtitles */
 }
 
-/* header */
+/* Header */
 
 header {
     display: flex;
-    justify-content: space-between;
-    padding: 1em;
+    justify-content: space-between; /* Space between header items */
+    padding: 1em; /* Padding for header */
 }
 
 .logo {
-    max-width: 100px;
+    max-width: 100px; /* Max width for the logo */
 }
 
 .nav {
     position: fixed;
-    background: var(--clr-dark);
-    color: var(--clr-light);
+    background: var(--clr-dark); /* Background color for navigation */
+    color: var(--clr-light); /* Text color for navigation */
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    z-index: 100;
+    z-index: 100; /* Ensure nav is on top */
     
-    transform: translateX(100%);
-    transition: transform 250ms cubic-bezier(.5, 0, .5, 1);
+    transform: translateX(100%); /* Start hidden off-screen */
+    transition: transform 250ms cubic-bezier(.5, 0, .5, 1); /* Smooth slide-in transition */
 }
 
 .nav__list {
@@ -164,58 +161,53 @@ header {
     display: flex;
     height: 100%;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-evenly; /* Space between navigation items */
     align-items: center;
     margin: 0;
     padding: 0;
 }
 
 .nav__link {
-    color: inherit;
-    font-weight: var(--fw-bold);
-    font-size: var(--fs-h2);
-    text-decoration: none;
+    color: inherit; /* Inherit text color from parent */
+    font-weight: var(--fw-bold); /* Bold text for navigation links */
+    font-size: var(--fs-h2); /* Font size for navigation links */
+    text-decoration: none; /* Remove underline from links */
 }
 
 .nav__link:hover {
-    color: var(--clr-accent);
+    color: var(--clr-accent); /* Change color on hover */
 }
 
 .nav-toggle {
-    padding: .5em;
-    background: transparent;
-    border: 0;
-    cursor: pointer;
+    padding: .5em; /* Padding around the toggle button */
+    background: transparent; /* Transparent background for toggle */
+    border: 0; /* Remove border */
+    cursor: pointer; /* Pointer cursor for button */
     position: absolute;
-    right: 1em;
+    right: 1em; /* Position toggle button */
     top: 1em;
-    z-index: 1000;
+    z-index: 1000; /* Ensure toggle is on top */
 }
 
 .nav-open .nav {
-    transform: translateX(0);
+    transform: translateX(0); /* Show nav when open */
 }
 
 .nav-open .nav-toggle {
-    position: fixed;
+    position: fixed; /* Fix position of toggle button */
 }
 
 .nav-open .hamburger {
-    transform: rotate(.625turn);
+    transform: rotate(.625turn); /* Rotate hamburger icon when open */
 }
 
 .nav-open .hamburger::before {
-    transform: rotate(90deg) translateX(-6px);
+    transform: rotate(90deg) translateX(-6px); /* Adjust before pseudo-element */
 }
 
 .nav-open .hamburger::after {
-    opacity: 0;
+    opacity: 0; /* Hide after pseudo-element */
 }
-
-
-
-
-
 
 .hamburger {
     display: block;
@@ -225,17 +217,16 @@ header {
 .hamburger,
 .hamburger::before,
 .hamburger::after {
-    background: var(--clr-accent);
+    background: var(--clr-accent); /* Hamburger icon color */
     width: 2em;
     height: 3px;
-    border-radius: 1em;
-    transition: transform 250ms ease-in-out;
+    border-radius: 1em; /* Rounded edges for hamburger lines */
+    transition: transform 250ms ease-in-out; /* Smooth transform effect */
 }
-
 
 .hamburger::before,
 .hamburger::after {
-    content: '';
+    content: ''; /* Create pseudo-elements */
     position: absolute;
     left: 0;
     right: 0;
@@ -244,15 +235,14 @@ header {
 .hamburger::before { top: 6px; }
 .hamburger::after { bottom: 6px; }
 
-
-/*  Intro section  */
+/* Intro section */
 
 .intro {
     position: relative;
 }
 
 .intro__img {
-    box-shadow: var(--bs);
+    box-shadow: var(--bs); /* Box shadow for intro image */
 }
 
 .section__subtitle--intro {
@@ -262,9 +252,9 @@ header {
 @media (min-width: 600px) {
     .intro {
         display: grid;
-        width: min-content;
-        margin: 0 auto;
-        grid-column-gap: 1em;
+        width: min-content; /* Constrain width of intro section */
+        margin: 0 auto; /* Center intro section */
+        grid-column-gap: 1em; /* Gap between grid columns */
         grid-template-areas: 
             "img title"
             "img subtitle";
@@ -273,210 +263,201 @@ header {
     
     .intro__img {
         grid-area: img;
-        min-width: 250px;
+        min-width: 250px; /* Minimum width for intro image */
         position: relative;
-        z-index: 2;
+        z-index: 2; /* Ensure image is above other elements */
     }    
     
     .section__subtitle--intro {
-        align-self: start;
+        align-self: start; /* Align subtitle to start of grid area */
         grid-column: -1 / 1;
         grid-row: 2;
-        text-align: right;
+        text-align: right; /* Align text to the right */
         position: relative;
-        left: -1.5em;
-        width: calc(100% + 1.5em);
+        left: -1.5em; /* Adjust position */
+        width: calc(100% + 1.5em); /* Extend width */
     }
 }
 
-
-
-/*  My services section  */
+/* My services section */
 
 .my-services {
-    background-color: var(--clr-dark);
-    background-image: url(../img/services-bg.jpg);
-    background-size: cover;
-    /* background-blend-mode: multiply; */
-    color: var(--clr-light);
-    text-align: center;
+    background-color: var(--clr-dark); /* Background color for services section */
+    background-image: url(../images/pexels-sam-nam-491996-1204148.jpg); /* Background image */
+    background-size: cover; /* Cover the entire background */
+    color: var(--clr-light); /* Text color for services section */
+    text-align: center; /* Center text */
 }
 
 .section__title--services {
-    color: var(--clr-accent);
+    color: var(--clr-accent); /* Title color for services section */
     position: relative;
 }
 
 .section__title--services::after {
     content: '';
     display: block;
-    width: 2em;
+    width: 2em; /* Line width */
     height: 1px;
     margin: 0.5em auto 1em;
-    background: var(--clr-light);
-    opacity: 0.25;
+    background: var(--clr-light); /* Line color */
+    opacity: 0.25; /* Line opacity */
 }
 
 .services {
-    margin-bottom: 4em;
+    margin-bottom: 4em; /* Margin below services section */
 }
 
 .service {
-    max-width: 500px;
-    margin: 0 auto;
+    max-width: 500px; /* Max width for service items */
+    margin: 0 auto; /* Center service items */
 }
 
 @media (min-width: 800px) {
     .services {
         display: flex;
-        max-width: 1000px;
-        margin-left: auto;
+        max-width: 1000px; /* Max width for services in large screens */
+        margin-left: auto; /* Center horizontally */
         margin-right: auto;
     }
     
     .service + .service {
-        margin-left: 2em;
+        margin-left: 2em; /* Margin between service items */
     }
 }
 
+/* About me section */
 
 .about-me {
-    max-width: 1000px;
-    margin: 0 auto;
+    max-width: 1000px; /* Max width for about me section */
+    margin: 0 auto; /* Center about me section */
 }
 
 .about-me__img {
-    box-shadow: var(--bs);
-    
-    
+    box-shadow: var(--bs); /* Box shadow for about me image */
 }
 
 @media (min-width: 600px) {
     .about-me {
         display: grid;
-        grid-template-columns: 1fr 200px;
+        grid-template-columns: 1fr 200px; /* Grid layout for about me section */
         grid-template-areas: 
             "title img"
             "subtitle img"
             "text img";
-        grid-column-gap: 2em;
+        grid-column-gap: 2em; /* Gap between columns */
     }
     
     .section__title--about {
-        grid-area: title;
+        grid-area: title; /* Title area in grid layout */
     }
     
     .section__subtitle--about {
-        grid-column: 1 / -1;
+        grid-column: 1 / -1; /* Span full width */
         grid-row: 2;
         position: relative;
-        left: -1em;
-        width: calc(100% + 2em);
+        left: -1em; /* Adjust position */
+        width: calc(100% + 2em); /* Extend width */
         padding-left: 1em;
-        padding-right: calc(200px + 4em);
+        padding-right: calc(200px + 4em); /* Adjust padding */
     }
     
     .about-me__img {
         grid-area: img;
         position: relative;
-        z-index: 2;
-        
-        
+        z-index: 2; /* Ensure image is above other elements */
     }
 }
 
 /* My Work */
 
 .my-work {
-    background-color: var(--clr-dark);
-    color: var(--clr-light);
-    text-align: center;    
+    background-color: var(--clr-dark); /* Background color for work section */
+    color: var(--clr-light); /* Text color for work section */
+    text-align: center; /* Center text */
 }
 
 .portfolio {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid layout */
 }
 
 .portfolio__item {
-    background: var(--clr-accent);
-    overflow: hidden;
+    background: var(--clr-accent); /* Background color for portfolio items */
+    overflow: hidden; /* Hide overflow */
 }
 
 .portfolio__img {
     transition: 
-        transform 750ms cubic-bezier(.5, 0, .5, 1),
-        opacity 250ms linear;
+        transform 750ms cubic-bezier(.5, 0, .5, 1), /* Smooth transform transition */
+        opacity 250ms linear; /* Smooth opacity transition */
 }
 
 .portfolio__item:focus {
     position: relative;
-    z-index: 2;
+    z-index: 2; /* Ensure focused item is above others */
 }
 
 .portfolio__img:hover,
 .portfolio__item:focus .portfolio__img {
-    transform: scale(1.2);
-    opacity: .5;
+    transform: scale(1.2); /* Scale up on hover or focus */
+    opacity: .5; /* Change opacity */
 }
 
-
-/* footer */
+/* Footer */
 
 .footer {
-    background: #111;
-    color: var(--clr-accent);
-    text-align: center;
-    padding: 2.5em 0;
-    font-size: var(--fs-h3);
-
+    background: #111; /* Dark background for footer */
+    color: var(--clr-accent); /* Text color for footer */
+    text-align: center; /* Center text */
+    padding: 2.5em 0; /* Padding for footer */
+    font-size: var(--fs-h3); /* Font size for footer text */
 }
 
 .footer a { 
-    color: inherit;
-    text-decoration: none;
+    color: inherit; /* Inherit color for footer links */
+    text-decoration: none; /* Remove underline */
 }
 
 .footer__link {
-    font-weight: var(--fw-bold);
+    font-weight: var(--fw-bold); /* Bold text for footer links */
 }
 
 .footer__link:hover,
 .social-list__link:hover {
-    opacity: .7;
+    opacity: .7; /* Change opacity on hover */
 }
 
 .footer__link:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* Underline on hover */
 }
 
 .social-list {
     list-style: none;
     display: flex;
-    justify-content: center;
-    margin: 2em 0 0;
+    justify-content: center; /* Center social list items */
+    margin: 2em 0 0; /* Margin above social list */
     padding: 0;
 }
 
 .social-list__item {
-    margin: 0 .5em;
+    margin: 0 .5em; /* Margin between social list items */
 }
 
 .social-list__link {
-    padding: .5em;
+    padding: .5em; /* Padding around social list links */
 }
-
 
 /* Individual portfolio item styles */
 
 .portfolio-item-individual {
-    padding: 0 2em 2em;
-    max-width: 1000px;
-    margin: 0 auto;
+    padding: 0 2em 2em; /* Padding for individual portfolio items */
+    max-width: 1000px; /* Max width for individual items */
+    margin: 0 auto; /* Center individual items */
 }
 
 .portfolio-item-individual p {
-    max-width: 600px;
-    margin-left: auto;
+    max-width: 600px; /* Max width for paragraphs in individual items */
+    margin-left: auto; /* Center paragraphs horizontally */
     margin-right: auto;
 }
