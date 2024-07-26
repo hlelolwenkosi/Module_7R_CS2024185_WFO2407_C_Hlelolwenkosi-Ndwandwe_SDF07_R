@@ -1,24 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Character encoding for the webpage -->
     <meta charset="UTF-8">
+    
+    <!-- Viewport settings for responsive design -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title displayed in the browser tab -->
     <title>Web Dev Hlelo Portfolio Website</title>
+    
+    <!-- Normalize CSS to ensure consistent styling across different browsers -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    
+    <!-- Font Awesome for vector icons like social media icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
     integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+    
+    <!-- Google Fonts for custom font styles -->
     <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+    
+    <!-- Link to custom CSS file for additional styling -->
     <link rel="stylesheet" href="css/style.css">
-
 </head>
 <body>
+    <!-- Header Section: Contains logo and navigation menu -->
     <header>
+        <!-- Logo Section: Displays the website's logo -->
         <div class="logo">
             <img src="images/web-dev-hlelo-high-resolution-logo-black.png" alt="DevJane logo">
         </div>
+        
+        <!-- Navigation Toggle Button: For mobile devices to show/hide the navigation menu -->
         <button class="nav-toggle" aria-label="toggle navigation">
             <span class="hamburger"></span>
         </button>
+        
+        <!-- Navigation Menu: Provides links to different sections of the website -->
         <nav class="nav">
             <ul class="nav__list">
                 <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
@@ -29,101 +47,105 @@
         </nav>
     </header>
     
-    <!-- Introduction -->
+    <!-- Introduction Section: Briefly introduces the user -->
     <section class="intro" id="home">
+        <!-- Main heading with the user's name -->
         <h1 class="section__title section__title--intro">
             Hi, I am <strong>Hlelolwenkosi Ndwandwe</strong>
         </h1>
+        <!-- Subtitle indicating the user's profession -->
         <p class="section__subtitle section__subtitle--intro">Front-End Developer</p>
-        <img src="images/hlelo1.jpg" alt="a picture of Hlelo smilling"class="intro__img"  />
+        <!-- Profile image of the user -->
+        <img src="images/hlelo1.jpg" alt="a picture of Hlelo smiling" class="intro__img">
     </section>
 
-    <!-- My services -->
+    <!-- My Services Section: Lists the services offered by the user -->
     <section class="my-services" id="services">
+        <!-- Section title for the services overview -->
         <h2 class="section__title section__title--services">What I do</h2>
         <div class="services">
+            <!-- Service 1: Website Design and Development -->
             <div class="service">
                 <h3>Website Design and Development</h3>
                 <p>As a front-end website designer and developer, I focus on creating visually appealing and user-friendly websites.
                      I design layouts and interfaces, then bring them to life using HTML, CSS, and JavaScript. I ensure that each website is responsive, 
-                     so it looks and functions well on all devices and screen sizes.  </p>
+                     so it looks and functions well on all devices and screen sizes.</p>
             </div>
+            <!-- Service 2: SEO & Performance Optimization -->
             <div class="service">
                 <h3>SEO & Performance Optimization</h3>
                 <p>I focus on improving website visibility in search engines and enhancing site speed. 
                     I optimize content and structure for better search rankings, implement technical SEO best practices, 
-                    and ensure that websites load quickly and run smoothly for a better user experience. </p>
+                    and ensure that websites load quickly and run smoothly for a better user experience.</p>
             </div>
+            <!-- Service 3: Website Maintenance and Support -->
             <div class="service">
                 <h3>Website Maintenance and Support</h3>
                 <p>I handle website maintenance and support, ensuring that sites run smoothly and securely.
                      My tasks include updating content, fixing bugs, optimizing performance,
                      and providing technical support to address any issues that arise.</p>
-                
             </div>
         </div>
+        <!-- Button linking to the My Work section -->
         <a href="#work" class="btn">My Work</a>
     </section>
 
-    <!-- About me -->
+    <!-- About Me Section: Provides background information about the user -->
     <section class="about-me" id="about">
+        <!-- Section title for the About Me overview -->
         <h2 class="section__title section__title--about">Who I am</h2>
+        <!-- Subtitle with additional details about the user -->
         <p class="section__subtitle section__subtitle--about">Front-End Developer based in Stellenbosch</p>
         <div class="about-me__body">
+            <!-- Paragraphs describing the user's background, skills, and interests -->
             <p>Hi, I'm Hlelolwenkosi Ndwandwe, a Front-End Developer in training at Code Space Academy.
                 I love bringing creative ideas to life on the web using HTML, CSS, and JavaScript. 
-                Currently, I'm exploring frameworks like React and Vue.js to enhance my skills.
-                 </p>
+                Currently, I'm exploring frameworks like React and Vue.js to enhance my skills.</p>
             <p>My projects focus on responsive design and user experience, and I'm passionate about learning more in this ever-evolving field.</p>
-            </div>
-        <img src="images/Lwenko.jpg" alt="Hlelo smilling"class="about-me__img">>
+        </div>
+        <!-- Image of the user -->
+        <img src="images/Lwenko.jpg" alt="Hlelo smiling" class="about-me__img">
     </section>
 
-    <!-- My Work -->
+    <!-- My Work Section: Showcases the user's portfolio -->
     <section class="my-work" id="work">
+        <!-- Section title for the portfolio -->
         <h2 class="section__title">My Work</h2>
         <div class="portfolio">
-            <!-- Portfolio item 01 -->
+            <!-- Portfolio Item 1: Link to a GitHub repository with a preview image -->
             <a href="https://github.com/hlelolwenkosi/Module_3R_CS20240185-_wfo2407_C_Hlelolwenkosi-Ndwandwe_SDF03_R" class="portfolio__item">
-                <img src="images/Cat's Portfolio.png"alt=Portfolio item 01" class="portfolio__img">
+                <img src="images/Cat's Portfolio.png" alt="Portfolio item 01" class="portfolio__img">
             </a>
-            <!-- Portfolio item 02 -->
+            <!-- Portfolio Item 2: Link to a GitHub repository with a preview image -->
             <a href="https://github.com/hlelolwenkosi/Module_2R_CS20240185_wfo2407_wfo2407-c_Hlelolwenkosi-Ndwandwe_SDF02_R" class="portfolio__item">
                 <img src="images/Profile 1.png" alt="Portfolio item 02" class="portfolio__img">
             </a>
-            <!-- Portfolio item 03 -->
+            <!-- Portfolio Item 3: Link to a GitHub repository with a preview image -->
             <a href="https://github.com/hlelolwenkosi/Module_5R_CS20240185_WFO2407_GroupC_Hlelolwenkosi-Ndwandwe_SDF05R" class="portfolio__item">
                 <img src="images/buttons.png" alt="Portfolio item 03" class="portfolio__img">
             </a>
-            <!-- Portfolio item 04 -->
+            <!-- Portfolio Item 4: Link to a GitHub repository with a preview image -->
             <a href="https://github.com/hlelolwenkosi/Module_6R_CS2024185_WFO2407_Group-c_Hlelolwenkosi-Ndwandwe_SDF06_R" class="portfolio__item">
                 <img src="images/cat's instagram.png" alt="Portfolio item 04" class="portfolio__img">
             </a>
-           
-            
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer Section: Provides contact information and links to social media -->
     <footer class="footer">
+        <!-- Email link for contacting the user -->
         <a href="mailto:1071hf@gmail.com" class="footer__link">1071hf@gmail.com</a>
+        
+        <!-- Social media links with icons -->
         <ul class="social-list">
             <li class="social-list__item">
-                <a class="social-list__link" href="https://codepen.io/Hlelo-Ndwandwe " aria-label="CodePen"><i class="fab fa-codepen"></i></a>
+                <a class="social-list__link" href="https://codepen.io/Hlelo-Ndwandwe" aria-label="CodePen"><i class="fab fa-codepen"></i></a>
             </li>
             <li class="social-list__item">
                 <a class="social-list__link" href="https://dribbble.com/Hlelo1" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
             </li>
             <li class="social-list__item">
-                <a class="social-list__link" href=" https://x.com/Hlelo0918437657" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                <a class="social-list__link" href="https://x.com/Hlelo0918437657" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
             </li>
             <li class="social-list__item">
-                <a class="social-list__link" href="https://github.com/hlelolwenkosi" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            </li>
-        </ul>
-    </footer>
-
-    <script src="js/index.js"></script>
-
-</body>
-</html>
+                <a class
